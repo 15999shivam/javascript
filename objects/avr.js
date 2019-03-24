@@ -31,6 +31,7 @@ console.log(variable);
 var variable=10;
 */
 
+
 var variable=10;
 
  

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <h1>NOTES-APP</h1>
+    <h2>take noes and ne ver forget</h2>
+    <input id="searchText" type="text" placeholder="filter todos">
+
+    <select name="" id="filterBy">
+        <option value="byEdited">Sort by last edited</option>
+        <option value="byCreated">Sort by recently created</option>
+        <option value="alphabatical">Sort by alphabatically</option>
+    </select>
+    <div id='notes'>
+
+    </div>
+    <button id="createNote">create button</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src="http://wzrd.in/standalone/uuid%2Fv4@latest"></script>
+    <script src="./notesFunctions.js"></script>
+    <script src="./notes.js"></script>
+</body>
+</html>

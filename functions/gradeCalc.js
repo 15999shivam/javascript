@@ -6,6 +6,7 @@
 
 gradeCalc = function(score,totalScore=100)
 {
+    if(typeof score === 'number'){
     let grade;
     let percent = score/totalScore*100;
     if(percent>=0 && percent<=59)
@@ -34,6 +35,16 @@ gradeCalc = function(score,totalScore=100)
     }
     return `You got a ${grade} (${percent}%)!`
 }
+else{
+    throw Error('Argument must be A NUMBER');
+}
+}
 
-let grade = gradeCalc(75);
-console.log(grade);
+try{
+    let grade = gradeCalc('75');
+    console.log(grade);
+}
+catch(e)
+{
+    console.log(e)
+}
